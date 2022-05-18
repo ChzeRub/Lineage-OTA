@@ -1,7 +1,6 @@
 #!/bin/bash
 
 DEVICE=$1
-REPOS="${@:2}"
 
 d=$(date +%Y%m%d)
 
@@ -20,11 +19,14 @@ oldurl=$(grep url $DEVICE.json | cut -d ' ' -f 9)
 # Clear the changelog file
 echo "" > changelog.txt
 
-for repo in ${REPOS[*]}
+for repo in $(find .. -name .git ! -path "../Lineage-OTA/*")
 do
-    echo "########################################" >> changelog.txt
-    echo "${repo} Changes:" >> changelog.txt
-    git --git-dir ../"${repo}"/.git log --since="${oldutc}" >> changelog.txt
+    if [[ $(git --git-dir "${repo}" log --since="${oldutc}") ]];
+    then
+    	echo "########################################" >> changelog.txt
+    	echo "${repo} Changes:" >> changelog.txt
+    	git --git-dir "${repo}" log --since="${oldutc}" >> changelog.txt
+    fi
 done
 
 echo "########################################" >> changelog.txt
@@ -39,8 +41,8 @@ TAG=$(echo "${DEVICE}-${d}")
 url="https://github.com/ChzeRub/Lineage-OTA/releases/download/${TAG}/${FILENAME}"
 sed -i "s|${oldurl}|\"${url}\",|g" $DEVICE.json
 
-git add $DEVICE.json
-git commit -m "Update ${DEVICE} to ${d}"
-git push
+#git add $DEVICE.json
+#git commit -m "Update ${DEVICE} to ${d}"
+#git push
 
-hub release create -a ../out/target/product/$DEVICE/$FILENAME -a changelog.txt -m "${TAG}" "${TAG}"
+#hub release create -a ../out/target/product/$DEVICE/$FILENAME -a changelog.txt -m "${TAG}" "${TAG}"
