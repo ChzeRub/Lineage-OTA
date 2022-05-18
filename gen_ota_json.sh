@@ -43,4 +43,4 @@ git add $DEVICE.json
 git commit -m "Update ${DEVICE} to ${d}"
 git push
 
-hub release create -a ../out/target/product/$DEVICE/$FILENAME -a changelog.txt -m "${TAG}" "${TAG}-utc"
+hub release create -a ../out/target/product/$DEVICE/$FILENAME -a changelog.txt -m "${TAG}" "${TAG}"
