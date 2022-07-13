@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": "1655163924",
-      "filename": "lineage-18.1-20220613-UNOFFICIAL-onyx.zip",
-      "id": "27317b3487d90feaea0e0e714aae9982",
+      "datetime": "1657738469",
+      "filename": "lineage-18.1-20220713-UNOFFICIAL-onyx.zip",
+      "id": "7b0668fd4d42916ab0cfd77cd5575504",
       "romtype": "UNOFFICIAL",
-      "size": "534121723",
-      "url":  "https://github.com/ChzeRub/Lineage-OTA/releases/download/onyx-20220613/lineage-18.1-20220613-UNOFFICIAL-onyx.zip",
+      "size": "534860265",
+      "url":  "https://github.com/ChzeRub/Lineage-OTA/releases/download/onyx-20220713/lineage-18.1-20220713-UNOFFICIAL-onyx.zip",
       "version": "18.1"
     }
   ]
