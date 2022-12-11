@@ -1,2 +1,582 @@
 
 ########################################
+../build/make/.git Changes:
+commit 2fc66564fdcd2f5a2b062011ad36d5eed6596481
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Thu Dec 8 12:35:40 2022 -0700
+
+    Bump Security String to 2022-12-05
+    
+    Implemented:
+    ============
+    CVE:            References:    Type:  Severity:  Updated AOSP versions:
+    CVE-2021-39617  A-175190844    EoP    High       11, 12, 12L
+    CVE-2022-20124  A-170646036    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20144  A-187702830    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20411  A-232023771    RCE    Critical   10, 11, 12, 12L, 13
+    CVE-2022-20442  A-176094367    EoP    High       10, 11, 12, 12L
+    CVE-2022-20444  A-197296414    EoP    High       11, 12
+    CVE-2022-20449  A-239701237    DoS    High       10, 11, 12, 12L, 13
+    CVE-2022-20466  A-179725730    ID     Moderate   13
+                                   ID     High       10, 11, 12, 12L
+    CVE-2022-20468  A-228450451    ID     Moderate   10, 11, 12, 12L, 13
+    CVE-2022-20469  A-230867224    RCE    High       10, 11, 12, 12L, 13
+    CVE-2022-20470  A-234013191    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20471  A-238177877    ID     High       11, 12, 12L, 13
+    CVE-2022-20472  A-239210579    RCE    Critical   10, 11, 12, 12L, 13
+    CVE-2022-20473  A-239267173    RCE    Critical   10, 11, 12, 12L, 13
+    CVE-2022-20474  A-240138294    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20475  A-240663194    EoP    High       11, 12, 12L, 13
+    CVE-2022-20476  A-240936919    DoS    High       10, 11, 12, 12L
+    CVE-2022-20478  A-241764135    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20479  A-241764340    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20480  A-241764350    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20483  A-242459126    ID     High       10, 11, 12, 12L, 13
+    CVE-2022-20484  A-242702851    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20485  A-242702935    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20486  A-242703118    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20487  A-242703202    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20488  A-242703217    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20491  A-242703556    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20495  A-243849844    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20498  A-246465319    ID     Critical   10, 11, 12, 12L, 13
+    CVE-2022-20500  A-246540168    DoS    High       10, 11, 12, 12L, 13
+    CVE-2022-20501  A-246933359    EoP    High       10, 11, 12, 12L, 13
+    CVE-2022-20611  A-242996180    EoP    High       10, 11, 12, 12L, 13
+    
+    Implemented (Qualcomm components):
+    ==================================
+    CVE:            References:    Severity:  Subcomponent:
+    CVE-2022-33268  A-245992426    High           Bluetooth
+                    QC-CR#3182085
+    
+    Previously Implemented:
+    =======================
+    CVE:            References:    Type:  Severity:  Updated AOSP versions:  Prior Change:
+    CVE-2021-0934   A-169762606    DoS    High       10, 11, 12, 12L, 13     912b946c8384
+    CVE-2021-39795  A-201667614    EoP    High       11, 12, 12L, 13         435643fc9
+    
+    Not Implemented:
+    =======================
+    None
+    
+    Not Applicable (platform source):
+    =================================
+    CVE:            References:    Type:  Severity:  Updated AOSP versions:
+    CVE-2022-20240  A-231496105    EoP    High       12, 12L
+    CVE-2022-20477  A-241611867    EoP    High       13
+    CVE-2022-20482  A-240422263    DoS    High       12, 12L, 13
+    CVE-2022-20496  A-245242273    ID     High       12, 12L, 13
+    CVE-2022-20497  A-246301979    ID     High       12, 12L, 13
+    CVE-2022-20502  A-222166527    ID     High       13
+    
+    Change-Id: I48e68ebc8777fc639980dfadd0788dad315bd4e9
+########################################
+../hardware/nxp/nfc/.git Changes:
+commit 84ccfac1a2c400ac58f0fdccaf9f8aca750088db
+Merge: d6ae32c e606290
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Dec 7 07:45:32 2022 -0700
+
+    Merge tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/hardware/nxp/nfc into staging/lineage-18.1_merge_android-security-11.0.0_r62
+    
+    Android Security 11.0.0 Release 62 (9269287)
+    
+    * tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/hardware/nxp/nfc:
+      OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2
+    
+    Change-Id: I3b57e96108c5e2fee172a1001725c2500e9be6bd
+########################################
+../external/chromium-webview/patches/.git Changes:
+commit c1a360eeafb2ca4ad3fd1ecc27470c62c61eccf6
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Tue Nov 29 19:24:37 2022 -0700
+
+    Update Chromium Webview to 108.0.5359.79
+    
+    Change-Id: I10057b95411e30361f57ffedeb1ce271deffdf42
+########################################
+../external/chromium-webview/prebuilt/x86/.git Changes:
+commit b1a7fd670e3a9fefe279a94e76129c095d6050e2
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Nov 30 05:40:43 2022 -0700
+
+    Update Chromium Webview x86 prebuilt to 108.0.5359.79
+    
+    Change-Id: Ic46a9311ff39930df62ce5f77f176e8bb5904d64
+########################################
+../external/chromium-webview/prebuilt/arm/.git Changes:
+commit 7bae3737604eb449aa442624098d6f31241109d6
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Nov 30 05:40:38 2022 -0700
+
+    Update Chromium Webview arm prebuilt to 108.0.5359.79
+    
+    Change-Id: I77f3863d7877976b67861c8f36108446ae2f69cd
+########################################
+../external/chromium-webview/prebuilt/arm64/.git Changes:
+commit 5ef1df56b9cdab36e6a751106b684648d86b3960
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Nov 30 05:40:41 2022 -0700
+
+    Update Chromium Webview arm64 prebuilt to 108.0.5359.79
+    
+    Change-Id: I20d6c4b657402c27b3b9b9198a657704b559783c
+########################################
+../.repo/manifests/.git Changes:
+commit e06a26c806119d824025bbf1db7ce16bad042ec9
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Mon Dec 5 22:25:32 2022 -0700
+
+    Track our own fork(s) for 2022-12 ASB patching
+    
+    * frameworks/minikin
+    
+    Change-Id: I66148d001af595c19be732658045b7b3dfa3c219
+########################################
+../android/.git Changes:
+commit e06a26c806119d824025bbf1db7ce16bad042ec9
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Mon Dec 5 22:25:32 2022 -0700
+
+    Track our own fork(s) for 2022-12 ASB patching
+    
+    * frameworks/minikin
+    
+    Change-Id: I66148d001af595c19be732658045b7b3dfa3c219
+########################################
+../system/bt/.git Changes:
+commit 096a99d05f78b206428e0578e45c6385e666416c
+Merge: 441c2fe61 eb3cad6ff
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Dec 7 07:48:41 2022 -0700
+
+    Merge tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/system/bt into staging/lineage-18.1_merge_android-security-11.0.0_r62
+    
+    Android Security 11.0.0 Release 62 (9269287)
+    
+    * tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/system/bt:
+      Fix integer overflow when parsing avrc response
+      Add length check when copy AVDT and AVCT packet
+      Add missing increment in bnep_api.cc
+      RESTRICT AUTOMERGE Added max buffer length check
+      Add length check when copy AVDTP packet
+    
+    Change-Id: I68ef6f908ea763ab58f27dee6df2db11470d8f57
+########################################
+../frameworks/minikin/.git Changes:
+commit 107a01a1a80cb2ccf2455d90e4976eeaea398bc9
+Merge: 7dbff20 a1ba873
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Dec 7 07:42:48 2022 -0700
+
+    Merge tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/frameworks/minikin into staging/lineage-18.1_merge_android-security-11.0.0_r62
+    
+    Android Security 11.0.0 Release 62 (9269287)
+    
+    * tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/frameworks/minikin:
+      Fix OOB crash for registerLocaleList
+      Fix OOB read for registerLocaleList
+      Break layout context before and after bidi control character
+    
+    Change-Id: I9a8e1fe792c8ae0c18c1f9e7ecc72c20a0466adb
+########################################
+../frameworks/base/.git Changes:
+commit 35e8db7c0d25bf935d44115e968e76289a26df73
+Merge: 78585e8ea2b 28243a5ffbc
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Dec 7 07:40:41 2022 -0700
+
+    Merge tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-18.1_merge_android-security-11.0.0_r62
+    
+    Android Security 11.0.0 Release 62 (9269287)
+    
+    * tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/frameworks/base:
+      [DO NOT MERGE] Revert "Fix system zen rules by using owner package name if caller is system"
+      [DO NOT MERGE] Revert "Check rule package name in ZenModeHelper.addAutomaticRule"
+      Validate package name passed to setApplicationRestrictions.
+      Add safety checks on KEY_INTENT mismatch.
+      [DO NOT MERGE] Fix permanent denial of service via setComponentEnabledSetting
+      [Do Not Merge] Ignore malformed shortcuts
+      [DO NOT MERGE] Update window with FLAG_SECURE when bouncer is showing
+      [RESTRICT AUTOMERGE] Allow activity to be reparent while allowTaskReparenting is applied
+      Fix a security issue in app widget service.
+      Fix NPE
+      [pm] forbid deletion of protected packages
+      Include all enabled services when FEEDBACK_ALL_MASK.
+      Prevent non-admin users from deleting system apps.
+      Limit the size of NotificationChannel and NotificationChannelGroup
+      Revert "Prevent non-admin users from deleting system apps."
+      Drop input for toast and child surfaces
+      SurfaceControl: Add setDropInputMode api
+      DO NOT MERGE: Revert "Map TYPE_TRUSTED_APPLICATION_OVERLAY to system window type for A11y"
+      Add mechanism for a task's windows to be trusted overlays
+      Change InputWindowInfo::isTrustedOverlay() to be permission and flag based
+    
+    Conflicts:
+            core/java/android/view/WindowManager.java
+            packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationShadeWindowController.java
+    
+    Change-Id: Iaf5f611012175df784718939776975e3c78d7180
+########################################
+../frameworks/native/.git Changes:
+commit 2bd85a006f345eb64cc239b7705404cc36cc3b6e
+Merge: 847c78fc9 cdf3a651d
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Dec 7 07:44:35 2022 -0700
+
+    Merge tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/frameworks/native into staging/lineage-18.1_merge_android-security-11.0.0_r62
+    
+    Android Security 11.0.0 Release 62 (9269287)
+    
+    * tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/frameworks/native:
+      SurfaceFlinger: Implement drop input modes
+      InputFlinger: Add DROP_INPUT feature flags
+      SurfaceControl: Add setDropInputMode api
+      DO NOT MERGE Initialize DrawingState::trustedOverlay to false in constructor
+      Add mechanism for a task's windows to be trusted overlays (SF)
+      Change InputWindowInfo::isTrustedOverlay() to be permission and flag based.
+    
+    Conflicts:
+            libs/gui/Android.bp
+    
+    Change-Id: I519aa975c298a972b3857ba52e9ff9417c1c52fb
+########################################
+../packages/apps/Settings/.git Changes:
+commit fb80ba54c8b7a7385bbb8df9f42acbd786d1af24
+Author: Milton Wu <mingjuwu@google.com>
+Date:   Mon Aug 8 09:05:00 2022 +0000
+
+    Add FLAG_SECURE for ChooseLockPassword and Pattern
+    
+    Prevent ChooseLockPassword and ChooseLockPatten being projected to
+    remote views, add FLAG_SECURE for these screens.
+    
+    Bug: 179725730
+    Test: Check these 2 screens not projected to chromecast
+    Test: robo test for SetupChooseLockPatternTest ChooseLockPatternTest
+          SetupChooseLockPasswordTest ChooseLockPasswordTest
+    Change-Id: I7449a24427c966c1aa4280a7b7e7e70b60997cca
+
+commit f742289fff480a21870f7e91b2d98091f6a27408
+Merge: d0d36abb65 17123fedff
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Dec 7 07:47:54 2022 -0700
+
+    Merge tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/packages/apps/Settings into staging/lineage-18.1_merge_android-security-11.0.0_r62
+    
+    Android Security 11.0.0 Release 62 (9269287)
+    
+    * tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/packages/apps/Settings:
+      Prevent exfiltration of system files via avatar picker.
+      Revert "Prevent exfiltration of system files via user image settings."
+    
+    Change-Id: Ic49e102477c68fd4b606218f69a234b3b7342780
+########################################
+../packages/apps/PermissionController/.git Changes:
+commit 36d0bfa51c8e123da9aef5c087427028daad291f
+Merge: 819f3a4d7 033965a25
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Dec 7 07:46:55 2022 -0700
+
+    Merge tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into staging/lineage-18.1_merge_android-security-11.0.0_r62
+    
+    Android Security 11.0.0 Release 62 (9269287)
+    
+    * tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/packages/apps/PackageInstaller:
+      Create button which ignores clicks when window is partially obscured
+    
+    Change-Id: If29b66e93e9e62f8b8da5b98cafc2026b4d4f89c
+########################################
+../packages/apps/EmergencyInfo/.git Changes:
+commit 0bc565a0fba2cc9ad9dd77d016684194baf9a1e3
+Merge: c0cd966 9a86ed3
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Dec 7 07:46:18 2022 -0700
+
+    Merge tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/packages/apps/EmergencyInfo into staging/lineage-18.1_merge_android-security-11.0.0_r62
+    
+    Android Security 11.0.0 Release 62 (9269287)
+    
+    * tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/packages/apps/EmergencyInfo:
+      Prevent exfiltration of system files via avatar picker.
+      Revert "Prevent exfiltration of system files via user image settings."
+    
+    Change-Id: I28783591a6d840421f78464eac5d3bbf89618d44
+########################################
+../packages/apps/Bluetooth/.git Changes:
+commit 5b8b39ad6b4eae77b1ac3bd67a16ffb390555d20
+Merge: 3eff27a7e e292a90d2
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Dec 7 07:45:56 2022 -0700
+
+    Merge tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/packages/apps/Bluetooth into staging/lineage-18.1_merge_android-security-11.0.0_r62
+    
+    Android Security 11.0.0 Release 62 (9269287)
+    
+    * tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/packages/apps/Bluetooth:
+      Fix URI check in BluetoothOppUtility.java
+    
+    Change-Id: I417c40ac763d796e87c6c511db3793c711074e51
+########################################
+../packages/services/Telecomm/.git Changes:
+commit c65dd3de859542c5d6fa9fb47a93237ec13730df
+Merge: 4eb73fb2 2b3bbcf3
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Wed Dec 7 07:48:19 2022 -0700
+
+    Merge tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/packages/services/Telecomm into staging/lineage-18.1_merge_android-security-11.0.0_r62
+    
+    Android Security 11.0.0 Release 62 (9269287)
+    
+    * tag 'android-security-11.0.0_r62' of https://android.googlesource.com/platform/packages/services/Telecomm:
+      Hide overlay windows when showing phone account enable/disable screen.
+    
+    Change-Id: I7ab1e54b576ca1883d038eb8e95dab4308c781cf
+########################################
+../lineage/wiki/.git Changes:
+commit 0813290e89997701122999b1d9bd4e4704cd42cb
+Author: Michael W <baddaemon87@gmail.com>
+Date:   Sun Dec 11 14:04:53 2022 +0100
+
+    wiki: mdarcy[_tab]: Remove note_show
+    
+    * These haven't been a thing since
+      commit 8765eea49eab0c1e2d7480e4afa0a8c4fde66489
+    
+    Change-Id: I9a960487a89067444187ec28771a59739d58c38e
+
+commit 97360174e8eab338d7b848db4b626ef0ce8cd72e
+Author: Piotr Lange <zpl20052020@protonmail.ch>
+Date:   Sun Dec 11 11:46:31 2022 +0100
+
+    wiki: Remove duplicate declarations of "recovery_boot"
+    
+    Change-Id: If22ad84d7cb04d8b918decb74be8efa3be9fc3e5
+
+commit 2d32db64c0b9755696cd4240525f22c4892dd75c
+Author: LuK1337 <priv.luk@gmail.com>
+Date:   Mon Dec 5 00:41:01 2022 +0100
+
+    wiki: Remove KB2007 from supported models
+    
+    We don't document bootloader unlock on this variant, therefore we don't
+    advertise it as supported.
+    
+    Change-Id: Ia81e595366379a456517e6be71968242f63b2781
+########################################
+../lineage/mirror/.git Changes:
+commit a46f1c58b8df9bd4087afdbb21cbeabc9721ebe6
+Author: Tim Schumacher <timschumi@gmx.de>
+Date:   Fri Dec 9 14:01:34 2022 +0100
+
+    Updated aosp-minimal to 09-Dec-2022 13:01 UTC
+    
+    Change-Id: I976f6848a69c0b2f3fc6c4c86cb2e1abc60fda40
+
+commit 2c65c479042a38568dce0a848b296350435aef7c
+Author: Tim Schumacher <timschumi@gmx.de>
+Date:   Tue Dec 6 14:01:26 2022 +0100
+
+    Updated aosp-minimal to 06-Dec-2022 13:01 UTC
+    
+    Change-Id: If8639aaba494f782e1859ef6e5c6bcde97264286
+
+commit 5e5568795906fe3d7108e3b2aa802cf4e5efff1e
+Author: Tim Schumacher <timschumi@gmx.de>
+Date:   Mon Dec 5 14:01:17 2022 +0100
+
+    Updated lineage-minimal to 05-Dec-2022 13:01 UTC
+    
+    Change-Id: Ifab95452c17aa3126aa2642b4952ff90ce92fd94
+
+commit 618cc70588641c15ee5bb4677b54f8220bb6f566
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Sun Dec 4 08:01:45 2022 -0700
+
+    Updated to 04-Dec-2022 15:01 UTC
+
+commit ef8f641903dc48c675a0f217b655ab81f23c2334
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Sun Dec 4 07:48:12 2022 -0700
+
+    Updated to 04-Dec-2022 14:48 UTC
+
+commit 970a17bd3be77666395838ba652e40bf98ddabc4
+Author: Tim Schumacher <timschumi@gmx.de>
+Date:   Wed Nov 30 14:01:47 2022 +0100
+
+    Updated aosp-minimal to 30-Nov-2022 13:01 UTC
+    
+    Change-Id: If44713d1e407569aeb1ffa6fb24e103d1e123842
+########################################
+../lineage/scripts/.git Changes:
+commit 45d62060bfaca101f52b14d0e61b295b6921fa40
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Tue Nov 29 19:00:40 2022 -0700
+
+    build-webview: Update default webview to 108.0.5359.79
+    
+    Change-Id: I1a30b034b3b6335ca1efb9074afde205a2f97a5d
+########################################
+../lineage/hudson/.git Changes:
+commit ed21e8192f0ff59a1e6ee62add5e386befcda21d
+Author: Kevin F. Haggerty <haggertk@lineageos.org>
+Date:   Sat Dec 3 13:47:30 2022 -0700
+
+    hudson: Drop experimentals for 20
+    
+    As long as apex signing is still broken these just wedge the signing
+    queue, preventing shipping releases from completing without manual
+    intervention
+    
+    Change-Id: I4e1d12a968f88ac7d81bd815c954086710a7d0ba
+########################################
+../lineage/crowdin/.git Changes:
+commit 533f819a92d12fdada188f1f6524b8b5e1ee8cf8
+Author: Michael Bestas <mkbestas@lineageos.org>
+Date:   Fri Dec 9 15:01:23 2022 +0200
+
+    config: lineage-20.0: Add Aperture
+    
+    Change-Id: I787955d24035ce07acb0be5e0110778e9c7884d1
+########################################
+../vendor/qcom/opensource/commonsys/system/bt/.git Changes:
+commit 7a28ac2ce0da342383deb29e98b6fb259401dd4e
+Author: Ugo Yu <ugoyu@google.com>
+Date:   Tue Oct 30 00:47:04 2018 +0800
+
+    DO NOT MERGE: Fix possible OOB when AVDT data channel recive ACL data
+    
+    Bug: 111450156
+    
+    Change-Id: Id23eeedcb7bde5866cd53a2f7f1c30f27c5352f6
+    (cherry picked from commit b0125caafec2183d73fc899ce5a8aee43a6e54af)
+    (cherry picked from commit f349ff0c65523437b3f20ef54a7b0e5fd56364dc)
+
+commit 5d0c2b2b941acc76d2a02f9a994dc9a0a079e9dd
+Author: Keith Mok <keithmok@google.com>
+Date:   Sun Aug 14 23:08:20 2022 +0000
+
+    Fix integer overflow when parsing avrc response
+    
+    Convert min_len from 16 bits to 32 bits to avoid
+    length checking overflow.
+    Also, use calloc instead of malloc for list allocation
+    since caller need to clean up string memory in the list items
+    
+    Bug: 242459126
+    Test: fuzz_avrc
+    Tag: #security
+    Ignore-AOSP-First: Security
+    Merged-In: I7250509f2b320774926a8b24fd28828c5217d8a4
+    Change-Id: I7250509f2b320774926a8b24fd28828c5217d8a4
+    (cherry picked from commit 18fd685cfcc2690a9748a29721a1c275ec18448b)
+    Merged-In: I7250509f2b320774926a8b24fd28828c5217d8a4
+
+commit e02825588980dbf28c2d859e9108113692aa84a1
+Author: Keith Mok <keithmok@google.com>
+Date:   Tue Aug 16 21:41:03 2022 +0000
+
+    Add length check when copy AVDT and AVCT packet
+    
+    Previous fix for AVDT causing memory leak.
+    And missing similar fix for AVCT packet.
+    
+    Bug: 232023771
+    Test: make
+    Tag: #security
+    Ignore-AOSP-First: Security
+    Merged-In: Ifa8ed1cd9ea118acba78bdfdf6d5861fad254a90
+    Change-Id: Ifa8ed1cd9ea118acba78bdfdf6d5861fad254a90
+    (cherry picked from commit 240baf57ea9a112c153af0b53082c6951c636653)
+    Merged-In: Ifa8ed1cd9ea118acba78bdfdf6d5861fad254a90
+
+commit 920402ab900983fae1ea3c9ba4dfdc8b70fd9f90
+Author: Brian Delwiche <delwiche@google.com>
+Date:   Thu Aug 25 20:39:08 2022 +0000
+
+    Add missing increment in bnep_api.cc
+    
+    Bug: 228450451
+    Test: manual, pair BT and play audio
+    Tag: #security
+    Ignore-AOSP-First: Security
+    Change-Id: I681878508feae3d0526ed3e928af7a415e7d5c36
+    (cherry picked from commit 0fa54c7d8a2c061202e61d75b805661c1e89a76d)
+    Merged-In: I681878508feae3d0526ed3e928af7a415e7d5c36
+
+commit e7aba739f69c155c24dbe0803c0ccecb792f8879
+Author: Brian Delwiche <delwiche@google.com>
+Date:   Thu Aug 25 18:52:28 2022 +0000
+
+    RESTRICT AUTOMERGE Added max buffer length check
+    
+    Bug: 230867224
+    Test: Manual -- paired Bluetooth headset and played audio
+    Tags: #security
+    Ignore-AOSP-First: Security
+    Change-Id: I740038288143715a1c06db781efd674b269a7f3e
+    (cherry picked from commit f67ea88c64d62e81c9a804c67ff06c52a6920d39)
+    Merged-In: I740038288143715a1c06db781efd674b269a7f3e
+
+commit e296f0d65c96aa88586eee111a1c0b4538996dc8
+Author: Ted Wang <tedwang@google.com>
+Date:   Thu Aug 4 09:41:24 2022 +0800
+
+    Add length check when copy AVDTP packet
+    
+    Bug: 232023771
+    Test: make
+    Tag: #security
+    Ignore-AOSP-First: Security
+    Change-Id: I68dd78c747eeafee5190dc56d7c71e9eeed08a5b
+    Merged-In: I68dd78c747eeafee5190dc56d7c71e9eeed08a5b
+    (cherry picked from commit 324c3065f863b8484847bbdfd91ef4709d407c8c)
+    Merged-In: I68dd78c747eeafee5190dc56d7c71e9eeed08a5b
+########################################
+../vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/.git Changes:
+commit 8996090d9945d3cb732091f2a13dfa37167bbfb3
+Author: Brian Delwiche <delwiche@google.com>
+Date:   Wed Sep 28 23:30:49 2022 +0000
+
+    Fix URI check in BluetoothOppUtility.java
+    
+    Bug: 225880741
+    Test: BT unit tests, validated against researcher POC
+    Tag: #security
+    Ignore-AOSP-First: Security
+    Change-Id: I65c1494023930aa23fede55936488f605c7cfe01
+    (cherry picked from commit d0957cfdf1fc1b36620c1545643ffbc37f0ac24c)
+    Merged-In: I65c1494023930aa23fede55936488f605c7cfe01
+########################################
+../vendor/nxp/opensource/sn100x/halimpl/.git Changes:
+commit d99f6db31875e0b1a3a0f4a89538fdc8c40b35a6
+Author: Alisher Alikhodjaev <alisher@google.com>
+Date:   Mon Sep 19 21:30:11 2022 -0700
+
+    OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2
+    
+    Bug: 238177877
+    Test: build ok
+    Merged-In: I9ecee2f8bbc527194184fe43f374d98c09bbff41
+    Merged-In: Ie6e4a2e1cda2ba6c8e70f6aac0a6e12af3d3b396
+    Change-Id: Iccef75dcda03cbf8a6da314d14b4d3dfa51f7c55
+    (cherry picked from commit 4d23eb81604ceea12d2929fe1f78873d6d604d1c)
+    Merged-In: Iccef75dcda03cbf8a6da314d14b4d3dfa51f7c55
+########################################
+../vendor/nxp/opensource/pn5xx/halimpl/.git Changes:
+commit 1073eb1f2974de55f843a096d903e69d73eb21b8
+Author: Alisher Alikhodjaev <alisher@google.com>
+Date:   Mon Sep 19 21:30:11 2022 -0700
+
+    OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2
+    
+    Bug: 238177877
+    Test: build ok
+    Merged-In: I9ecee2f8bbc527194184fe43f374d98c09bbff41
+    Merged-In: Ie6e4a2e1cda2ba6c8e70f6aac0a6e12af3d3b396
+    Change-Id: Iccef75dcda03cbf8a6da314d14b4d3dfa51f7c55
+    (cherry picked from commit 4d23eb81604ceea12d2929fe1f78873d6d604d1c)
+    Merged-In: Iccef75dcda03cbf8a6da314d14b4d3dfa51f7c55
+########################################
