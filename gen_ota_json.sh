@@ -4,16 +4,16 @@ DEVICE=$1
 
 d=$(date +%Y%m%d)
 
-FILENAME=lineage-18.1-"${d}"-UNOFFICIAL-"${DEVICE}".zip
+FILENAME="lineage-18.1-${d}-UNOFFICIAL-${DEVICE}.zip"
 
-oldd=$(grep filename $DEVICE.json | cut -d '-' -f 3)
+oldd=$(grep "filename" $DEVICE.json | cut -d '-' -f 3)
 md5=$(md5sum ../out/target/product/$DEVICE/$FILENAME | cut -d ' ' -f 1)
 oldmd5=$(grep '"id"' $DEVICE.json | cut -d':' -f 2)
 utc=$(grep ro.build.date.utc ../out/target/product/$DEVICE/system/build.prop | cut -d '=' -f 2)
-oldutc=$(grep datetime $DEVICE.json | cut -d ':' -f 2)
+oldutc=$(grep "datetime" $DEVICE.json | cut -d ':' -f 2)
 size=$(wc -c ../out/target/product/$DEVICE/$FILENAME | cut -d ' ' -f 1)
-oldsize=$(grep size $DEVICE.json | cut -d ':' -f 2)
-oldurl=$(grep url $DEVICE.json | cut -d ' ' -f 9)
+oldsize=$(grep "size" $DEVICE.json | cut -d ':' -f 2)
+oldurl=$(grep "url" $DEVICE.json | cut -d ':' -f 2-3)
 
 # Generate the Changelog
 echo "" > changelog.txt
