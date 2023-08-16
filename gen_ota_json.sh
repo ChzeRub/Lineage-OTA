@@ -16,7 +16,6 @@ oldsize=$(grep size $DEVICE.json | cut -d ':' -f 2)
 oldurl=$(grep url $DEVICE.json | cut -d ' ' -f 9)
 
 # Generate the Changelog
-# Clear the changelog file
 echo "" > changelog.txt
 
 for repo in $(find .. -name .git ! -path "../Lineage-OTA/*")
@@ -31,15 +30,15 @@ done
 
 echo "########################################" >> changelog.txt
 
-#This is where the magic happens
+#Update $DEVICE.json
+TAG=$(echo "${DEVICE}-${d}")
+url="https://github.com/ChzeRub/Lineage-OTA/releases/download/${TAG}/${FILENAME}"
+sed -i "s!${oldurl}! \"${url}\",!g" $DEVICE.json
+
 sed -i "s!${oldmd5}! \"${md5}\",!g" $DEVICE.json
 sed -i "s!${oldutc}! \"${utc}\",!g" $DEVICE.json
 sed -i "s!${oldsize}! \"${size}\",!g" $DEVICE.json
 sed -i "s!${oldd}!${d}!" $DEVICE.json
-#echo Generate Download URL
-TAG=$(echo "${DEVICE}-${d}")
-url="https://github.com/ChzeRub/Lineage-OTA/releases/download/${TAG}/${FILENAME}"
-sed -i "s!${oldurl}!\"${url}\",!g" $DEVICE.json
 
 git add $DEVICE.json
 git commit -m "Update ${DEVICE} to ${d}"
